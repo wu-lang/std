@@ -1,0 +1,13 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua Table wrapper
+
+concat:  extern fun(any, str?, int?, int?)   -> str
+insert:  extern fun(str, ...)
+maxn:    extern fun(any)                     -> int
+remove:  extern fun(any, int?)               -> any
+sort:    extern fun(any, fun)

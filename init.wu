@@ -1,0 +1,54 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua constant wrappers (_ ident prefix is broken currently)
+
+_G:          extern any
+_VERSION:    extern str
+
+
+
+# Lua Global method wrapper
+# More precise typing can be achieved if optional types get implemented
+
+assert:           extern fun(bool, str?)
+collectgarbage:   extern fun(str?, int?)        -> any?
+dofile:           extern fun(str?)              -> ...?
+error:            extern fun(str, int?)
+getfenv:          extern fun(fun?)              -> any
+getmetatable:     extern fun(any)               -> any?
+ipairs:           extern fun(any)               -> (fun, any, int)
+load:             extern fun(fun, str?)         -> fun
+loadfile:         extern fun(str?)              -> fun
+loadstring:       extern fun(str, str?)         -> (fun?, str?)
+next:             extern fun(any, any?)         -> any?
+pairs:            extern fun(any)               -> (fun, any)
+pcall:            extern fun(fun, ...?)         -> ...?
+print:            extern fun(...?)
+rawequal:         extern fun(any, any)          -> bool
+rawget:           extern fun(any, any)          -> any
+rawset:           extern fun(any, any, any)     -> any
+require:          extern fun(str)               -> any
+select:           extern fun(any, ...)          -> ...?
+setfenv:          extern fun(fun, any)          -> fun
+setmetatable:     extern fun(any, any)          -> any
+tonumber:         extern fun(any, int?)         -> float
+tostring:         extern fun(any)               -> str
+type:             extern fun(any)               -> str
+unpack:           extern fun(any, int?, int?)   -> ...?
+xpcall:           extern fun(fun, fun)          -> (bool, ...?)
+
+
+
+# Child modules
+import coroutine
+import debug
+import io
+import math
+import os
+import package
+import string
+import table

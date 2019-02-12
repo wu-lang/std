@@ -1,0 +1,19 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua OS wrapper
+
+clock:      extern fun()            -> int
+date:       extern fun(str?, num?)  -> any
+difftime:   extern fun(num, num)    -> int
+execute:    extern fun(str?)        -> int
+exit:       extern fun(num?)
+getenv:     extern fun(str)         -> str?
+remove:     extern fun(str)         -> (int?, str?)
+rename:     extern fun(str, str)    -> (int?, str?)
+setlocale:  extern fun(str?, str?)  -> (str?)
+time:       extern fun(any?)        -> int
+tmpname:    extern fun()            -> str

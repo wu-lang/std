@@ -1,0 +1,33 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua IO and File wrapper
+
+File: struct {}
+implement File {
+   close:   extern fun()
+   flush:   extern fun()
+   lines:   extern fun()            -> fun
+   read:    extern fun(...?)        -> ...?
+   seek:    extern fun(str?, int?)  -> int?
+   setvbuf: extern fun(str?, int?)
+   write:   extern fun(...)
+}
+
+close:   extern fun(any?)                 = "io.close"
+flush:   extern fun()                     = "io.flush"
+input:   extern fun(any?)      -> any?    = "io.input"
+lines:   extern fun(str?)      -> fun     = "io.lines"
+open:    extern fun(str, str?) -> File    = "io.open"
+output:  extern fun(any?)                 = "io.output"
+popen:   extern fun(str, str?) -> File    = "io.popen"
+read:    extern fun(...?)      -> ...?    = "io.read"
+stderr:  extern int                       = "io.stderr"
+stdin:   extern int                       = "io.stdin"
+stdout:  extern int                       = "io.stdout"
+tmpfile: extern fun()          -> File    = "io.tmpfile"
+type:    extern fun(any)       -> str?    = "io.type"
+write:   extern fun(...?)                 = "io.write"

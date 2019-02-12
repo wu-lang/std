@@ -1,0 +1,22 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua String wrapper
+
+byte:    extern fun(str, int?, int?)         -> ...int
+char:    extern fun(...int?)                 -> str
+dump:    extern fun(fun)                     -> str
+find:    extern fun(str, str, int?, bool?)   -> (int?, int?)
+format:  extern fun(str, ...?)               -> str
+gmatch:  extern fun(str, str)                -> fun
+gsub:    extern fun(str, str, any, int?)     -> (str, int)
+len:     extern fun(str)                     -> int
+lower:   extern fun(str)                     -> str
+match:   extern fun(str, str, int?)          -> any?
+rep:     extern fun(str, int)                -> str
+reverse: extern fun(str)                     -> str
+sub:     extern fun(str, int, int?)          -> str
+upper:   extern fun(str)                     -> str

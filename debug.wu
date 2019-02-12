@@ -1,0 +1,22 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua Debug wrapper
+
+getfenv:       extern fun(any)           -> any                = "debug.getfenv"
+gethook:       extern fun(int?)          -> (fun?, str?, int?) = "debug.gethook"
+getinfo:       extern fun(...)           -> any?               = "debug.getinfo"
+getlocal:      extern fun(...)           -> any                = "debug.getlocal"
+getmetatable:  extern fun(any)           -> any?               = "debug.getmetatable"
+getregistry:   extern fun()              -> any                = "debug.getregistry"
+getupvalue:    extern fun(fun, int)      -> any                = "debug.getupvalue"
+setfenv:       extern fun(any, any)      -> any                = "debug.setfenv"
+sethook:       extern fun(...)                                 = "debug.sethook"
+setlocal:      extern fun(...)           -> str?               = "debug.setlocal"
+setmetatable:  extern fun(any, any)      -> any                = "debug.setmetatable"
+setupvalue:    extern fun(fun, int, any) -> str?               = "debug.setupvalue"
+traceback:     extern fun(...)           -> str                = "debug.traceback"
+debug:         extern fun()                                    = "debug.debug"

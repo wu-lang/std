@@ -1,0 +1,14 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua Coroutine wrapper
+
+create:  extern fun(fun)       -> any           = "coroutine.create"
+resume:  extern fun(any, ...?) -> (bool, ...?)  = "coroutine.resume"
+running: extern fun()          -> any?          = "coroutine.running"
+status:  extern fun(any)       -> str           = "coroutine.status"
+wrap:    extern fun(fun)       -> fun           = "coroutine.wrap"
+yield:   extern fun(...?)                       = "coroutine.yield"

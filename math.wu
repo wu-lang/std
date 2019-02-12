@@ -1,0 +1,38 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua Math wrapper
+
+abs:        extern fun(float)          -> float
+acos:       extern fun(float)          -> float
+asin:       extern fun(float)          -> float
+atan:       extern fun(float)          -> float
+atan2:      extern fun(float, float)   -> float
+ceil:       extern fun(float)          -> int
+cos:        extern fun(float)          -> float
+cosh:       extern fun(float)          -> float
+deg:        extern fun(float)          -> float
+exp:        extern fun(float)          -> float
+floor:      extern fun(float)          -> int
+fmod:       extern fun(float, float)   -> float
+frexp:      extern fun(float)          -> float
+huge:       extern float
+ldexp:      extern fun(float, int)     -> float
+log:        extern fun(float)          -> float
+log10:      extern fun(float)          -> float
+max:        extern fun(...float)       -> float
+min:        extern fun(...float)       -> float
+modf:       extern fun(float)          -> float
+pi:         extern float
+pow:        extern fun(float, float)   -> float
+rad:        extern fun(float)          -> float
+random:     extern fun(...float)       -> float
+randomseed: extern fun(float)
+sin:        extern fun(float)          -> float
+sinh:       extern fun(float)          -> float
+sqrt:       extern fun(float)          -> float
+tan:        extern fun(float)          -> float
+tanh:       extern fun(float)          -> float

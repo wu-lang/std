@@ -1,0 +1,15 @@
+# Wu standard library
+# Copyright: 2018 wu-lang, MIT License
+# Author: evolbug <github.com/evolbug>
+
+
+
+# Lua Package wrapper
+
+cpath:   extern str
+loaded:  extern any
+loaders: extern any
+loadlib: extern fun(str, str) -> fun
+path:    extern str
+preload: extern any
+seeall:  extern fun(any)
