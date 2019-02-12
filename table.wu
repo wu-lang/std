@@ -6,8 +6,8 @@
 
 # Lua Table wrapper
 
-concat:  extern fun(any, str?, int?, int?)   -> str
-insert:  extern fun(str, ...)
-maxn:    extern fun(any)                     -> int
-remove:  extern fun(any, int?)               -> any
-sort:    extern fun(any, fun)
+concat:  extern fun(any, str?, int?, int?)   -> str = "table.concat"
+insert:  extern fun(str, ...)                       = "table.insert"
+maxn:    extern fun(any)                     -> int = "table.maxn"
+remove:  extern fun(any, int?)               -> any = "table.remove"
+sort:    extern fun(any, fun)                       = "table.sort"

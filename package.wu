@@ -6,10 +6,10 @@
 
 # Lua Package wrapper
 
-cpath:   extern str
-loaded:  extern any
-loaders: extern any
-loadlib: extern fun(str, str) -> fun
-path:    extern str
-preload: extern any
-seeall:  extern fun(any)
+cpath:   extern str                    = "package.cpath"
+loaded:  extern any                    = "package.loaded"
+loaders: extern any                    = "package.loaders"
+loadlib: extern fun(str, str) -> fun   = "package.loadlib"
+path:    extern str                    = "package.path"
+preload: extern any                    = "package.preload"
+seeall:  extern fun(any)               = "package.seeall"

@@ -6,17 +6,17 @@
 
 # Lua String wrapper
 
-byte:    extern fun(str, int?, int?)         -> ...int
-char:    extern fun(...int?)                 -> str
-dump:    extern fun(fun)                     -> str
-find:    extern fun(str, str, int?, bool?)   -> (int?, int?)
-format:  extern fun(str, ...?)               -> str
-gmatch:  extern fun(str, str)                -> fun
-gsub:    extern fun(str, str, any, int?)     -> (str, int)
-len:     extern fun(str)                     -> int
-lower:   extern fun(str)                     -> str
-match:   extern fun(str, str, int?)          -> any?
-rep:     extern fun(str, int)                -> str
-reverse: extern fun(str)                     -> str
-sub:     extern fun(str, int, int?)          -> str
-upper:   extern fun(str)                     -> str
+byte:    extern fun(str, int?, int?)         -> ...int         = "string.byte"
+char:    extern fun(...int?)                 -> str            = "string.char"
+dump:    extern fun(fun)                     -> str            = "string.dump"
+find:    extern fun(str, str, int?, bool?)   -> (int?, int?)   = "string.find"
+format:  extern fun(str, ...?)               -> str            = "string.format"
+gmatch:  extern fun(str, str)                -> fun            = "string.gmatch"
+gsub:    extern fun(str, str, any, int?)     -> (str, int)     = "string.gsub"
+len:     extern fun(str)                     -> int            = "string.len"
+lower:   extern fun(str)                     -> str            = "string.lower"
+match:   extern fun(str, str, int?)          -> any?           = "string.match"
+rep:     extern fun(str, int)                -> str            = "string.rep"
+reverse: extern fun(str)                     -> str            = "string.reverse"
+sub:     extern fun(str, int, int?)          -> str            = "string.sub"
+upper:   extern fun(str)                     -> str            = "string.upper"

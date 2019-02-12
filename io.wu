@@ -4,7 +4,7 @@
 
 
 
-# Lua IO and File wrapper
+# Lua File interface
 
 File: struct {}
 implement File {
@@ -16,6 +16,10 @@ implement File {
    setvbuf: extern fun(str?, int?)
    write:   extern fun(...)
 }
+
+
+
+# Lua IO wrapper
 
 close:   extern fun(any?)                 = "io.close"
 flush:   extern fun()                     = "io.flush"

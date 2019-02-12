@@ -4,7 +4,7 @@
 
 
 
-# Lua constant wrappers (_ ident prefix is broken currently)
+# Lua constant wrappers
 
 _G:          extern any
 _VERSION:    extern str
@@ -12,7 +12,6 @@ _VERSION:    extern str
 
 
 # Lua Global method wrapper
-# More precise typing can be achieved if optional types get implemented
 
 assert:           extern fun(bool, str?)
 collectgarbage:   extern fun(str?, int?)        -> any?
