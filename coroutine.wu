@@ -6,9 +6,9 @@
 
 # Lua Coroutine wrapper
 
-create:  extern fun(fun)       -> any           = "coroutine.create"
-resume:  extern fun(any, ...?) -> (bool, ...?)  = "coroutine.resume"
-running: extern fun()          -> any?          = "coroutine.running"
-status:  extern fun(any)       -> str           = "coroutine.status"
-wrap:    extern fun(fun)       -> fun           = "coroutine.wrap"
-yield:   extern fun(...?)                       = "coroutine.yield"
+create:  extern fun(fun)       -> any  = "coroutine.create"
+resume:  extern fun(any, ...?) -> ...  = "coroutine.resume"    # (bool, ...?)
+running: extern fun()          -> any? = "coroutine.running"
+status:  extern fun(any)       -> str  = "coroutine.status"
+wrap:    extern fun(fun)       -> fun  = "coroutine.wrap"
+yield:   extern fun(...?)              = "coroutine.yield"

@@ -19,12 +19,12 @@ dofile:           extern fun(str?)              -> ...?
 error:            extern fun(str, int?)
 getfenv:          extern fun(fun?)              -> any
 getmetatable:     extern fun(any)               -> any?
-ipairs:           extern fun(any)               -> (fun, any, int)
+ipairs:           extern fun(any)               -> ...   # (fun, any, int)
 load:             extern fun(fun, str?)         -> fun
 loadfile:         extern fun(str?)              -> fun
-loadstring:       extern fun(str, str?)         -> (fun?, str?)
+loadstring:       extern fun(str, str?)         -> ...?  # (fun?, str?)
 next:             extern fun(any, any?)         -> any?
-pairs:            extern fun(any)               -> (fun, any)
+pairs:            extern fun(any)               -> ...   # (fun, any)
 pcall:            extern fun(fun, ...?)         -> ...?
 print:            extern fun(...?)
 rawequal:         extern fun(any, any)          -> bool
@@ -38,7 +38,7 @@ tonumber:         extern fun(any, int?)         -> float
 tostring:         extern fun(any)               -> str
 type:             extern fun(any)               -> str
 unpack:           extern fun(any, int?, int?)   -> ...?
-xpcall:           extern fun(fun, fun)          -> (bool, ...?)
+xpcall:           extern fun(fun, fun)          -> ...   # (bool, ...?)
 
 
 
