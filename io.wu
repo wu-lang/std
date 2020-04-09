@@ -8,11 +8,11 @@
 
 File: struct {}
 implement File {
-   close:   extern fun(self, )
-   flush:   extern fun(self, )
-   lines:   extern fun(self, )            -> fun
-   read:    extern fun(self, ...?)        -> ...?
-   seek:    extern fun(self, str?, int?)  -> int?
+   close:   extern fun(self)
+   flush:   extern fun(self)
+   lines:   extern fun(self)             -> fun
+   read:    extern fun(self, ...?)       -> ...?
+   seek:    extern fun(self, str?, int?) -> int?
    setvbuf: extern fun(self, str?, int?)
    write:   extern fun(self, ...)
 }
