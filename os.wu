@@ -6,14 +6,14 @@
 
 # Lua OS wrapper
 
-clock:      extern fun()            -> int   = "os.clock"
-date:       extern fun(str?, num?)  -> any   = "os.date"
-difftime:   extern fun(num, num)    -> int   = "os.difftime"
-execute:    extern fun(str?)        -> int   = "os.execute"
-exit:       extern fun(num?)                 = "os.exit"
-getenv:     extern fun(str)         -> str?  = "os.getenv"
-remove:     extern fun(str)         -> ...?  = "os.remove"     # (int?, str?)
-rename:     extern fun(str, str)    -> ...?  = "os.rename"     # (int?, str?)
-setlocale:  extern fun(str?, str?)  -> str?  = "os.setlocale"
-time:       extern fun(any?)        -> int   = "os.time"
-tmpname:    extern fun()            -> str   = "os.tmpname"
+clock:      extern fun()              -> int   = "os.clock"
+date:       extern fun(str?, float?)  -> any   = "os.date"
+difftime:   extern fun(float, float)  -> int   = "os.difftime"
+execute:    extern fun(str?)          -> int   = "os.execute"
+exit:       extern fun(float?)                 = "os.exit"
+getenv:     extern fun(str)           -> str?  = "os.getenv"
+remove:     extern fun(str)           -> ...?  = "os.remove"     # (int?, str?)
+rename:     extern fun(str, str)      -> ...?  = "os.rename"     # (int?, str?)
+setlocale:  extern fun(str?, str?)    -> str?  = "os.setlocale"
+time:       extern fun(any?)          -> int   = "os.time"
+tmpname:    extern fun()              -> str   = "os.tmpname"
