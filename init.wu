@@ -17,7 +17,7 @@ assert:           extern fun(bool, str?)
 collectgarbage:   extern fun(str?, int?)        -> any?
 dofile:           extern fun(str?)              -> ...?
 error:            extern fun(str, int?)
-getfenv:          extern fun(fun?)              -> any
+getfenv:          extern fun(any)               -> any
 getmetatable:     extern fun(any)               -> any?
 ipairs:           extern fun(any)               -> ...   # (fun, any, int)
 load:             extern fun(fun, str?)         -> fun
